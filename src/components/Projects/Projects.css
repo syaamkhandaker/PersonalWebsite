@@ -48,9 +48,6 @@
   }
 }
 @media screen and (max-width: 843px) {
-  .resume__projects h1 {
-    font-size: 15px;
-  }
   .resume__projects-layout-maps img {
     padding: 10px;
     width: 46px;
