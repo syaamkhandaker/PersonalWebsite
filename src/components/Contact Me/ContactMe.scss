@@ -1,0 +1,36 @@
+@import '../variables.scss';
+
+.resume__view-contact{
+    display: flex;
+    justify-content: center;
+}
+
+.resume__view-contact-text{
+    h1{
+        
+        a{
+            display: flex;
+            font-family: $text-font;
+            color: $h1-color;
+            text-decoration: none;
+
+        }
+    }
+}
+.resume__view-contact-text-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        font-family: $text-font;
+        color: $h1-color;
+        padding: 10px;
+        border: 2px solid $accent-color;
+        text-decoration: none;
+        transition: all 0.25s;
+    }
+    :hover{
+        background-color: rgba(136,146,176,0.2);
+    }
+}
+

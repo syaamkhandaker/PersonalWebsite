@@ -1,0 +1,64 @@
+.resume__aboutme {
+  width: 100%;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.resume__aboutme img {
+  width: 420px;
+  height: 420px;
+}
+
+.resume__aboutme-text {
+  text-align: left;
+  align-items: flex-start;
+  padding: 50px;
+  display: flex;
+}
+.resume__aboutme-text p h1, .resume__aboutme-text p h2, .resume__aboutme-text p p {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+.resume__aboutme-text p h1 {
+  width: 600px;
+  color: #e6f1ff;
+  text-decoration: none;
+}
+.resume__aboutme-text p h2 {
+  width: 600px;
+  color: #ccd6f6;
+}
+.resume__aboutme-text p p {
+  width: 495px;
+  color: #8892b0;
+}
+
+.resume__aboutme-text-tag {
+  line-height: 1.25;
+}
+
+.resume__aboutme-button a {
+  font-family: "Poppins", sans-serif;
+  color: #e6f1ff;
+  padding: 10px;
+  border: 1px solid #64ffda;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+.resume__aboutme-button :hover {
+  background-color: rgba(136, 146, 176, 0.2);
+}
+
+.resume__aboutme-icons {
+  align-items: center;
+  display: flex;
+  justify-content: left;
+}
+.resume__aboutme-icons a {
+  padding: 10px;
+}
+.resume__aboutme-icons a img {
+  width: 40px;
+  height: 40px;
+}/*# sourceMappingURL=AboutMe.css.map */

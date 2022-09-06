@@ -1,0 +1,41 @@
+@import '../variables.scss';
+
+.resume__projects{
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    h1{
+        font-family: $text-font;
+        color: $h1-color;
+    }
+}
+
+.resume__projects-layout{
+    align-items: center;
+    justify-content: center;
+}
+.resume__projects-layout-maps{
+    padding: 25px;
+    img{
+        width: 200px;
+        padding: 50px;
+        border: 1px solid $accent-color;
+        &:hover{
+            background-color: rgba(136,146,176,0.2);
+        }
+    }
+}
+
+
+
+.resume__projects-layout-words{
+    padding: 25px;
+    img{
+        height:435px;
+        padding: 50px;
+        border: 1px solid $accent-color;
+        &:hover{
+            background-color: rgba(136,146,176,0.2);
+        }
+    }
+}

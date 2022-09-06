@@ -1,0 +1,68 @@
+@import '../variables.scss';
+
+.resume__aboutme{
+    width:100%;
+    height:60vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    img{
+        width: 420px;
+        height: 420px;
+    }
+}
+.resume__aboutme-text{
+    text-align: left;
+    align-items:flex-start;
+    padding: 50px;
+    display: flex;
+    p{
+        h1,h2,p{
+            font-family: $text-font;
+            text-decoration: none;
+        }
+        h1{
+            width: 600px;
+            color: $h1-color;
+            text-decoration: none;
+        }
+        h2{
+            width: 600px;
+            color: $h3-color;
+        }
+        p{
+            width: 495px;
+            color: $text-color;
+        }
+    }
+}
+
+.resume__aboutme-text-tag{
+        line-height: 1.25;
+    
+}
+.resume__aboutme-button{
+    a{
+        font-family: $text-font;
+        color: $h1-color;
+        padding: 10px;
+        border: 1px solid $accent-color;
+        text-decoration: none;
+        transition: all 0.25s;
+    }
+    :hover{
+        background-color: rgba(136,146,176,0.2);
+    }
+}
+.resume__aboutme-icons{
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    a{
+        padding: 10px;
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

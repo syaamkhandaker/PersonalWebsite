@@ -1,0 +1,28 @@
+.resume__view-contact {
+  display: flex;
+  justify-content: center;
+}
+
+.resume__view-contact-text h1 a {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  color: #e6f1ff;
+  text-decoration: none;
+}
+
+.resume__view-contact-text-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resume__view-contact-text-border a {
+  font-family: "Poppins", sans-serif;
+  color: #e6f1ff;
+  padding: 10px;
+  border: 2px solid #64ffda;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+.resume__view-contact-text-border :hover {
+  background-color: rgba(136, 146, 176, 0.2);
+}/*# sourceMappingURL=ContactMe.css.map */

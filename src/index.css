@@ -1,0 +1,11 @@
+@import url('https://fonts.google.com/specimen/Lato?query=lato');
+:root {
+    --navbar-font: 'Lato';
+    
+    --color-golden: #DCCA87;
+    --color-black: #0C0C0C;
+    --color-gray: #545454;
+    --color-crimson: #F5EFDB;
+    --color-grey: #AAAAAA;
+    --color-white: #FFFFFF;
+  }
