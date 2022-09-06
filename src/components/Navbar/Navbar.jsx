@@ -10,7 +10,7 @@ function Navbar () {
                 <img src={logo} />
             </div>
             <ul className='resume__view-links'>
-                <li><a className="underline-hover-effect" href='#About_Me'><text>1.</text> AboutMe</a></li>
+                <li><a className="underline-hover-effect" href='#About_Me'><text>1.</text> About Me</a></li>
                 <li><a className="underline-hover-effect" href='#Projects'><text>2.</text> Projects</a></li>
                 <li><a className="underline-hover-effect" href='#Contact_Me'><text>3.</text> Contact Me</a></li>
                 <li><a className="underline-hover-effect" href={pdf} target="_blank" rel="noreferrer">Resume/CV</a></li>

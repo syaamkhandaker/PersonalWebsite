@@ -4,17 +4,28 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  flex: 1;
 }
-.resume__aboutme img {
+
+.resume__aboutme-img {
+  flex: 1;
+  height: 90%;
+  align-items: center;
+  justify-content: end;
+  display: flex;
+  padding: 50px;
+}
+.resume__aboutme-img img {
   width: 420px;
   height: 420px;
 }
 
 .resume__aboutme-text {
   text-align: left;
-  align-items: flex-start;
-  padding: 50px;
+  align-items: center;
   display: flex;
+  width: 50%;
+  height: 90%;
 }
 .resume__aboutme-text p h1, .resume__aboutme-text p h2, .resume__aboutme-text p p {
   font-family: "Poppins", sans-serif;
@@ -38,6 +49,11 @@
   line-height: 1.25;
 }
 
+.resume__aboutme-button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 .resume__aboutme-button a {
   font-family: "Poppins", sans-serif;
   color: #e6f1ff;
@@ -61,4 +77,96 @@
 .resume__aboutme-icons a img {
   width: 40px;
   height: 40px;
+}
+
+@media screen and (max-width: 1143.8px) {
+  .resume__aboutme {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .resume__aboutme-img img {
+    width: 50%;
+    width: 315px;
+    height: 315px;
+  }
+  .resume__aboutme-text {
+    width: 50%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .resume__aboutme-text p h1 {
+    width: 600px;
+    font-size: 20px;
+  }
+  .resume__aboutme-text p h2 {
+    width: 600px;
+    font-size: 17px;
+  }
+  .resume__aboutme-text p p {
+    width: 400px;
+    font-size: 13px;
+  }
+  .resume__aboutme-icons a img {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .resume__aboutme {
+    padding-top: 175px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .resume__aboutme-img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .resume__aboutme-img img {
+    width: 300px;
+    height: 300px;
+  }
+  .resume__aboutme-button {
+    padding-bottom: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  .resume__aboutme-text {
+    padding: 1px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .resume__aboutme-text p h1 {
+    width: 600px;
+    font-size: 18px;
+  }
+  .resume__aboutme-text p h2 {
+    width: 600px;
+    font-size: 14px;
+  }
+  .resume__aboutme-text p p {
+    width: 300px;
+    font-size: 11px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .resume__aboutme-text-tag {
+    line-height: 1.5;
+  }
+  .resume__aboutme-text-linebreak {
+    display: none;
+  }
+  .resume__aboutme-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .resume__aboutme-icons a img {
+    width: 25px;
+    height: 25px;
+  }
 }/*# sourceMappingURL=AboutMe.css.map */

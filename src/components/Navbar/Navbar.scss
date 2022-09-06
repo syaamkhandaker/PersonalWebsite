@@ -2,13 +2,20 @@
 
 body{
     background-color: $background;
+    
 }
-
+html{
+    scroll-behavior: smooth;
+}
+html, body {
+    overflow-x: hidden;
+  }
 .resume__view {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    
 
 }
 
@@ -67,3 +74,37 @@ body{
         }
     }
   }
+  @media
+  (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+@media screen and (max-width: 1024px){
+    .resume__view-logo{
+        display: none;
+    }
+    .resume__view-links{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: rgba(10,25,47,0.95);
+        left: 0;
+        li{
+            a{
+                font-size: 10px;
+            }
+        }
+    }
+    .underline-hover-effect {
+        &::before{
+            display: none;
+            }
+        &:hover{
+            color: $accent-color;
+            transition: width 0.25s ease-out;
+        }
+    }
+}

@@ -34,3 +34,25 @@
     }
 }
 
+@media screen and (max-width: 1143.8px){
+    .resume__view-contact-text{
+        h1{
+            a{
+                align-items: center;
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .resume__view-contact-text{
+        h1{
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 15px;
+            }
+        }
+    }
+}
