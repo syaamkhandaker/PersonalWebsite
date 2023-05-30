@@ -1,8 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+This is a personal portfolio website I built out using React.js and Css/Bootstrap to showcase some of my achievements and projects I've worked on. 
 
 In the project directory, you can run:
 
