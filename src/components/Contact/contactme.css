@@ -1,0 +1,33 @@
+.contactme-area {
+  width: 500px;
+}
+.getintouch-paragraph {
+  padding-right: 0;
+  margin-right: 0;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.contactme-icon {
+  gap: 20px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.resume-button {
+  margin-top: 25px;
+  width: 150px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 890px) {
+  .contactme-area {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: fit-content;
+  }
+}

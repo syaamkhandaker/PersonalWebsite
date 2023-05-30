@@ -1,59 +1,49 @@
-.resume__projects {
-  text-align: center;
+.projects-paragraph-text {
+  width: 450px;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.project-image {
+  width: 450px;
+  height: 250px;
+  margin-right: 50px;
+  border-radius: 16px;
+  box-shadow: 0px 6.31621px 24.58px rgba(34, 47, 62, 0.5);
+}
+.projects-paragraph-header {
+  font-size: 36px;
+  font-weight: 500;
+}
+.icon-colors {
+  color: black;
+}
+.project-section {
+  margin-bottom: 100px;
+  display: flex;
   justify-content: center;
-  padding: 20px;
-}
-.resume__projects h1 {
-  font-family: "Poppins", sans-serif;
-  color: #e6f1ff;
 }
 
-.resume__projects-layout {
-  align-items: center;
-  justify-content: center;
-}
-
-.resume__projects-layout-maps {
-  padding: 25px;
-}
-.resume__projects-layout-maps img {
-  width: 200px;
-  padding: 50px;
-  border: 1px solid #64ffda;
-}
-.resume__projects-layout-maps img:hover {
-  background-color: rgba(136, 146, 176, 0.2);
-}
-
-.resume__projects-layout-words {
-  padding: 25px;
-}
-.resume__projects-layout-words img {
-  height: 435px;
-  padding: 50px;
-  border: 1px solid #64ffda;
-}
-.resume__projects-layout-words img:hover {
-  background-color: rgba(136, 146, 176, 0.2);
-}
-
-@media screen and (max-width: 1143.8px) {
-  .resume__projects-layout-maps img {
-    padding: 25px;
-    width: 100px;
+@media screen and (max-width: 890px) {
+  .project-section {
+    display: initial;
   }
-  .resume__projects-layout-words img {
-    height: 216px;
-    padding: 25px;
+  .project-image {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .projects-paragraph-text {
+    width: fit-content;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .mobile-icons-section {
+    margin-bottom: 50px;
+  }
+  .project-image {
+    width: 90%;
+    height: 90%;
   }
 }
-@media screen and (max-width: 843px) {
-  .resume__projects-layout-maps img {
-    padding: 10px;
-    width: 46px;
-  }
-  .resume__projects-layout-words img {
-    height: 100px;
-    padding: 10px;
-  }
-}/*# sourceMappingURL=Projects.css.map */

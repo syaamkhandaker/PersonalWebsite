@@ -1,18 +1,22 @@
-import React from 'react';
-import AboutMe from './components/AboutMe/AboutMe';
-import Projects from './components/Projects/Projects';
-import ContactMe from './components/Contact Me/ContactMe';
-import Navbar from './components/Navbar/Navbar'
-
+import "./App.css";
+import Navbar from "./components/Navbar/navbar";
+import AboutMe from "./components/AboutMe/aboutme";
+import Experience from "./components/Experience/experience";
+import Project from "./components/Projects/projects";
+import Contactme from "./components/Contact/contactme";
+import Footer from "./components/Footer/footer";
 
 function App() {
-    
-    return(
-    <div>
-        <Navbar />
-        <AboutMe />
-        <Projects />
-        <ContactMe />
-    </div>
-)}
+  return (
+    <>
+      <Navbar />
+      <AboutMe />
+      <Experience />
+      <Project />
+      <Contactme />
+      <Footer />
+    </>
+  );
+}
+
 export default App;
