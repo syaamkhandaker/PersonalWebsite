@@ -1,4 +1,4 @@
-This is a personal portfolio website I built out using React.js and Css/Bootstrap to showcase some of my achievements and projects I've worked on. 
+This is a personal portfolio website I built out using React.js and Css/Bootstrap to showcase some of my achievements and projects I've worked on. You can view it at [syaam](https://www.syaamkhandaker.com/)
 
 In the project directory, you can run:
 
