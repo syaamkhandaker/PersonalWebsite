@@ -18,9 +18,9 @@ export default function Body() {
             Hey there!
           </div>
           <div className="md:text-left text-center">
-            I&apos;m a Computer Science sophomore at Georgia Tech. Check out my
-            portfolio to see the cool stuff I&apos;m working on. I&apos;m all
-            about creating projects that actually matter to people.
+            I&apos;m a sophomore studying Computer Science at Georgia Tech.
+            Check out my portfolio to see the cool stuff I&apos;m working on.
+            I&apos;m all about creating projects that actually matter to people.
           </div>
         </div>
       </div>
