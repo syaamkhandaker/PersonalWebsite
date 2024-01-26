@@ -16,8 +16,8 @@ export default function Projects() {
               key={projectEntry.name}
               className="hover:bg-gray-200 rounded-2xl mb-5"
             >
-              <Link href={projectEntry.url} className="">
-                <div className="md:p-8">
+              <Link href={projectEntry.url} className="" target="_blank">
+                <div className="p-8">
                   <div className="text-xl font-medium">{projectEntry.name}</div>
                   <div className="mb-2">{projectEntry.timeline}</div>
                   <div>{projectEntry.text}</div>

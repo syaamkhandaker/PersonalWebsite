@@ -1,5 +1,6 @@
 import { experienceProps } from "@/common/types";
 import { ExperienceList } from "@/utils/constants";
+import Link from "next/link";
 
 export default function Experience() {
   return (
@@ -9,9 +10,13 @@ export default function Experience() {
         {ExperienceList.map((experienceEntry: experienceProps) => {
           return (
             <div key={experienceEntry.company} className="mb-8">
-              <div className="text-2xl font-medium">
+              <Link
+                href={experienceEntry.url}
+                className="text-2xl font-medium"
+                target="_blank"
+              >
                 {experienceEntry.company}
-              </div>
+              </Link>
               <div className="text-xl">{experienceEntry.role}</div>
               <div className="">{experienceEntry.timeline}</div>
               <div className="mb-2">{experienceEntry.location}</div>

@@ -2,6 +2,7 @@ export type navItemProps = { link: string; value: string };
 
 export type experienceProps = {
   company: string;
+  url: string;
   role: string;
   timeline: string;
   bullets: string[];
