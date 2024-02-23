@@ -43,6 +43,7 @@ export const ExperienceList = [
     bullets: [
       "Saved founders 10 hours weekly by implementing calendar and event tracking features",
       "Collaborated with a cross-functional team using agile methodologies to develop full stack features in Next.js, tRPC, MongoDB, and Tailwind CSS",
+      "Built centralized authentication micro-service used by 10+ teams using gRPC and Protobuf for inter-service communication and Nest.js",
     ],
     location: "Atlanta, GA",
   },
@@ -64,7 +65,22 @@ export const ProjectList = [
     ],
     timeline: "Feb 2023",
     text: "A formula one racing visualization dashboard for viewers to get realtime depictions of driver positions and lap times.",
-    url: "https://github.com/thearyanmittal/formulytics",
+    url: "https://devpost.com/software/formulytics",
+  },
+  {
+    name: "Subtext",
+    skills: [
+      "Typescript",
+      "React.js",
+      "Chakra UI",
+      "Flask",
+      "Postman",
+      "Hume API",
+      "Git",
+    ],
+    timeline: "Feb 2024",
+    text: "A full stack web app that provides a visual representation of tone, catering to both deaf and tone-deaf individuals, on any video.",
+    url: "https://devpost.com/software/subtext",
   },
   {
     name: "Sellraze Mobile App",
