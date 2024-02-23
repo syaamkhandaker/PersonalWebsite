@@ -12,7 +12,7 @@ export const ExperienceList = [
     role: "CTO and Co Founder",
     timeline: "Jun 2022 - Present",
     bullets: [
-      "Led team in generating over $100k worth of revenue and engaging with over 2,000 total students and businesses",
+      "Led a team in achieving a $5M evaluation and engaging with over 2,000 students and businesses in total.",
       "Increased business retention by 50% by implementing candidate recommendations and candidate vetting systems",
       "Improved student engagement by 40% through message notification systems with Twilio’s SMS services",
       "Incorporated 10+ AWS features to streamline backend and storage processes",
