@@ -1,9 +1,9 @@
-export const NavLinks = [
-  { link: "#about", value: "About" },
-  { link: "#work", value: "Work" },
-  { link: "#projects", value: "Projects" },
-  { link: "#contact", value: "Contact Me" },
-];
+// export const NavLinks = [
+//   { link: "#about", value: "About" },
+//   { link: "#work", value: "Work" },
+//   { link: "#projects", value: "Projects" },
+//   { link: "#contact", value: "Contact Me" },
+// ];
 
 export const ExperienceList = [
   {

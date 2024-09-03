@@ -1,14 +1,14 @@
 import { navItemProps } from "@/common/types";
-import { NavLinks } from "@/utils/constants";
+// import { NavLinks } from "@/utils/constants";
 import Link from "next/link";
 
 export default function Nav() {
   return (
-    <div className="flex justify-between">
-      <Link href="/" className="">
+    <div className="flex justify-between items-center">
+      <Link href="/" className="text-2xl font-bold text-black">
         Syaam Khandaker
       </Link>
-      <div className="md:flex justify-center items-center gap-10 hidden">
+      {/* <div className="md:flex justify-center items-center gap-10 hidden">
         {NavLinks.map((navItem: navItemProps) => {
           return (
             <Link
@@ -21,8 +21,12 @@ export default function Nav() {
             </Link>
           );
         })}
-      </div>
-      <Link href={"resume.pdf"} target="_blank">
+      </div> */}
+      <Link
+        href={"resume.pdf"}
+        target="_blank"
+        className="py-4 px-6 bg-secondary rounded-xl text-white font-bold text-2xl shadow-md transition duration-100 ease-linear hover:scale-110"
+      >
         Resume
       </Link>
     </div>

@@ -22,7 +22,7 @@ export default function Contact() {
         <Link
           href={"mailto:syaamkhandaker@gmail.com?subject=Hello"}
           target="_blank"
-          className="bg-gray-200 px-6 py-3 rounded-2xl flex items-center"
+          className="bg-secondary text-white px-5 py-4 rounded-2xl flex items-center"
         >
           Contact <ChevronRight />
         </Link>

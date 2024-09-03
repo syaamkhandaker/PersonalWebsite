@@ -4,10 +4,7 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div
-      className="flex justify-center mt-20 md:flex-row flex-col"
-      id="projects"
-    >
+    <div className="flex justify-center md:flex-row flex-col" id="projects">
       <div className="text-4xl md:mr-28 font-semibold">Projects</div>
       <div className="md:w-5/12 w-11/12 md:m-0 my-5">
         {ProjectList.map((projectEntry: projectProps) => {

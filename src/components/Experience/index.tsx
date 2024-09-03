@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Experience() {
   return (
-    <div className="flex justify-center mt-20 md:flex-row flex-col" id="work">
+    <div className="flex justify-center md:flex-row flex-col" id="work">
       <div className="text-4xl md:mr-28 font-semibold">Experience</div>
       <div className="md:w-5/12 w-5/6 md:m-0 my-5 ml-3">
         {ExperienceList.map((experienceEntry: experienceProps) => {
