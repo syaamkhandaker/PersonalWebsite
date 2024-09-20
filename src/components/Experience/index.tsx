@@ -1,7 +1,6 @@
 "use client";
 import { experienceProps } from "@/common/types";
 import { ExperienceList } from "@/utils/constants";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function Experience() {
@@ -14,17 +13,17 @@ export default function Experience() {
       <div className="text-5xl font-bold uppercase flex justify-center">
         Experience
       </div>
-      <div className="flex gap-10 justify-center items-stretch my-20 h-fit">
-        <div className="flex flex-col items-center">
+      <div className="flex gap-10 justify-center items-stretch my-20 h-1/2">
+        <div className="flex flex-col items-center gap-y-8">
           {ExperienceList.map((experienceEntry: experienceProps) => {
             return (
-              <div key={experienceEntry.company} className="mb-8 text-3xl">
+              <div key={experienceEntry.company} className="text-3xl">
                 <div
                   className={`${
                     experienceEntry.company === company
                       ? "text-secondary font-semibold underline"
                       : ""
-                  } cursor-pointer`}
+                  } cursor-pointer hover:text-secondary`}
                   onClick={() => handleCompanyClick(experienceEntry.company)}
                 >
                   {experienceEntry.company}
@@ -33,20 +32,25 @@ export default function Experience() {
             );
           })}
         </div>
-        <div className="w-0.5 h-max bg-black" />
-        <div className="w-[500px]">
+        <div className="w-0.5 h-full bg-black" />
+        <div className="w-1/4 flex gap-y-8">
           {ExperienceList.map((experienceEntry: experienceProps) => {
             if (experienceEntry.company === company) {
               return (
-                <div key={experienceEntry.company} className="mb-8">
-                  <div className="text-3xl font-semibold mb-5">
+                <div
+                  key={experienceEntry.company}
+                  className=" flex flex-col gap-4"
+                >
+                  <div className="text-3xl font-semibold w-max">
                     {experienceEntry.role}{" "}
                     <span className="text-secondary">
                       @ {experienceEntry.company}
                     </span>
                   </div>
-                  <div className="">{experienceEntry.timeline}</div>
-                  <div className="mb-2">{experienceEntry.location}</div>
+                  <div className="text-secondary text-xl font-semibold">
+                    {experienceEntry.timeline}
+                  </div>
+                  {/* <div className="mb-2">{experienceEntry.location}</div> */}
                   {experienceEntry.bullets.map((bullet: string) => {
                     return (
                       <li

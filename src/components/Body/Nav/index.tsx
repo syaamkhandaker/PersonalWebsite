@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center pt-10">
       <Link href="/" className="text-2xl font-bold text-black">
         Syaam Khandaker
       </Link>

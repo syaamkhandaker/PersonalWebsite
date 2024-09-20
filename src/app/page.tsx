@@ -11,34 +11,34 @@ import Link from "next/link";
 const Sections: JSX.Element[] = [
   <Body />,
   <Experience />,
-  // <Projects />,
+  <Projects />,
   // <Contact />,
 ];
 
 export default function Home() {
   return (
-    <div className="py-12">
+    <div className="flex flex-col gap-y-10">
       {Sections.map((section: JSX.Element, index: Number) => {
         return (
-          <div className="h-screen flex justify-center">
+          <div className="h-screen flex justify-center relative">
             <div className="w-11/12 px-20">
               {section}
               <Icons />
             </div>
-            <div className="absolute flex justify-center bottom-5 hover:cursor-pointer">
-              <ArrowDownwardIcon className="relative" />
+            <div className="absolute bottom-5 flex justify-center hover:cursor-pointer">
+              <ArrowDownwardIcon className="" />
             </div>
           </div>
         );
       })}
-      <div className="absolute bottom-5">
+      {/* <div className="absolute bottom-5">
         <Link
           href="https://github.com/syaamkhandaker/PersonalWebsite"
           className="text-xs relative "
         >
           Designed & Built by Syaam Khandaker
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }
