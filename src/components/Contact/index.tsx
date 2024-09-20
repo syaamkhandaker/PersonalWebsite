@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div className="h-full my-10" id="contact">
-      <div className="flex justify-center text-5xl font-semibold uppercase mb-10">
+    <div className="h-full flex justify-center flex-col" id="contact">
+      <div className="flex justify-center items-center text-5xl font-semibold uppercase mb-10">
         Get In Touch
       </div>
-      <div className="flex justify-center mt-5">
+      <div className="flex justify-center items-center">
         <div className="w-11/12 md:w-5/12 text-center text-2xl font-extralight">
           Whether you&apos;d like to reach out to me for any potential new
           opportunities or just have questions about my experiences, my inbox is
@@ -27,10 +27,10 @@ export default function Contact() {
           Contact <ChevronRight />
         </Link>
       </div>
-      <div className="flex justify-center py-6 absolute bottom-5 ">
+      <div className="flex justify-center">
         <Link
           href="https://github.com/syaamkhandaker/PersonalWebsite"
-          className="text-xs relative"
+          className="text-xs absolute bottom-10"
         >
           Designed & Built by Syaam Khandaker
         </Link>

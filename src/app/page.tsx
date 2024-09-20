@@ -12,7 +12,7 @@ const Sections: JSX.Element[] = [
   <Body />,
   <Experience />,
   <Projects />,
-  // <Contact />,
+  <Contact />,
 ];
 
 export default function Home() {
@@ -25,20 +25,16 @@ export default function Home() {
               {section}
               <Icons />
             </div>
-            <div className="absolute bottom-5 flex justify-center hover:cursor-pointer">
-              <ArrowDownwardIcon className="" />
-            </div>
+            {index !== Sections.length - 1 ? (
+              <div className="absolute bottom-5 flex justify-center hover:cursor-pointer">
+                <ArrowDownwardIcon className="" />
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
         );
       })}
-      {/* <div className="absolute bottom-5">
-        <Link
-          href="https://github.com/syaamkhandaker/PersonalWebsite"
-          className="text-xs relative "
-        >
-          Designed & Built by Syaam Khandaker
-        </Link>
-      </div> */}
     </div>
   );
 }
