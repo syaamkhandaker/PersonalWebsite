@@ -13,7 +13,7 @@ export default function Experience() {
       <div className="text-5xl font-bold uppercase flex justify-center">
         Experience
       </div>
-      <div className="flex gap-10 justify-center items-stretch my-20 h-1/2">
+      <div className="flex gap-10 justify-center items-stretch mt-20 h-1/2">
         <div className="flex flex-col items-center gap-y-8">
           {ExperienceList.map((experienceEntry: experienceProps) => {
             return (
@@ -50,7 +50,6 @@ export default function Experience() {
                   <div className="text-secondary text-xl font-semibold">
                     {experienceEntry.timeline}
                   </div>
-                  {/* <div className="mb-2">{experienceEntry.location}</div> */}
                   {experienceEntry.bullets.map((bullet: string) => {
                     return (
                       <li

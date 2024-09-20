@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <div className="flex flex-col" id="projects">
-      <div className="text-4xl flex justify-center font-semibold uppercase mb-20">
+      <div className="text-5xl flex justify-center font-semibold uppercase mb-20">
         Projects
       </div>
       <div className="flex justify-center">
@@ -21,9 +21,7 @@ export default function Projects() {
                     <div className="text-3xl font-semibold ">
                       {projectEntry.name}
                     </div>
-                    <div className="mb-2 text-secondary text-lg">
-                      {projectEntry.timeline}
-                    </div>
+                    <div className="mb-2 text-lg">{projectEntry.timeline}</div>
                     <div>{projectEntry.text}</div>
                     <div className="flex flex-wrap gap-2 mt-5">
                       {projectEntry.skills.map((skill: string) => {

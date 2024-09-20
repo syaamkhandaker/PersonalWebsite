@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Nav from "./Nav";
+import Link from "next/link";
 
 export default function Body() {
   return (
@@ -14,12 +15,19 @@ export default function Body() {
             alt="Photo of me :)"
           />
         </div>
-        <div className="bg-white w-[500px] h-[400px] p-10 flex items-center flex-col -translate-x-32 translate-y-60">
+        <div className="bg-white w-[500px] h-fit p-14 flex items-center flex-col -translate-x-32 translate-y-60">
           <div className="text-5xl font-bold py-10">Hey There!</div>
           <div className="text-2xl text-center">
-            I’m Syaam, a rising junior studying Computer Science at Georgia
-            Tech. Check out my portfolio to see the cool stuff I'm working on.
+            I’m Syaam, a junior studying Computer Science at Georgia Tech. Check
+            out my portfolio to see the cool stuff I'm working on.
           </div>
+          <Link
+            href={"resume.pdf"}
+            target="_blank"
+            className="py-4 px-6 bg-secondary rounded-xl text-white font-bold text-2xl shadow-md transition duration-100 ease-linear hover:scale-110 mt-10"
+          >
+            Resume
+          </Link>
         </div>
       </div>
     </div>
