@@ -1,17 +1,16 @@
+import Head from "next/head";
 import "./globals.css";
-import { Montserrat } from "next/font/google";
-
-const roboto = Montserrat({
-  weight: ["400", "500", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  display: "swap",
-});
+import { Poppins } from "next/font/google";
 
 export const metadata = {
   title: "Syaam Khandaker",
-  description: "Built by Syaam Khandaker",
+  "aria-description": "Built and Designed by Syaam Khandaker",
 };
+
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -19,9 +18,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <meta></meta>
-      <body className={roboto.className}>{children}</body>
+    <html lang="en" className="dotted">
+      <Head>
+        <meta {...metadata}></meta>
+      </Head>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }

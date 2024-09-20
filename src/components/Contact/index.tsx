@@ -5,16 +5,16 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div className="my-10" id="contact">
-      <div className="flex justify-center text-3xl font-semibold">
+    <div className="h-full flex justify-center flex-col" id="contact">
+      <div className="flex justify-center items-center text-5xl font-semibold uppercase mb-10">
         Get In Touch
       </div>
-      <div className="flex justify-center mt-5">
-        <div className="text-lg w-5/6 md:w-1/3 text-center">
+      <div className="flex justify-center items-center">
+        <div className="w-11/12 md:w-5/12 text-center text-2xl font-extralight">
           Whether you&apos;d like to reach out to me for any potential new
           opportunities or just have questions about my experiences, my inbox is
           always open. I&apos;m currently still looking for any
-          internships/part-time opportunities throughout the 2023-2024 school
+          internships/part-time opportunities throughout the 2024-2025 school
           year.
         </div>
       </div>
@@ -22,9 +22,17 @@ export default function Contact() {
         <Link
           href={"mailto:syaamkhandaker@gmail.com?subject=Hello"}
           target="_blank"
-          className="bg-gray-200 px-6 py-3 rounded-2xl flex items-center"
+          className="py-4 px-6 bg-secondary rounded-xl text-white font-bold text-2xl shadow-md transition duration-100 ease-linear hover:scale-110 mt-5"
         >
           Contact <ChevronRight />
+        </Link>
+      </div>
+      <div className="flex justify-center">
+        <Link
+          href="https://github.com/syaamkhandaker/PersonalWebsite"
+          className="text-xs absolute bottom-10"
+        >
+          Designed & Built by Syaam Khandaker
         </Link>
       </div>
     </div>

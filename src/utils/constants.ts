@@ -1,23 +1,44 @@
-export const NavLinks = [
-  { link: "#about", value: "About" },
-  { link: "#work", value: "Work" },
-  { link: "#projects", value: "Projects" },
-  { link: "#contact", value: "Contact Me" },
-];
+// export const NavLinks = [
+//   { link: "#about", value: "About" },
+//   { link: "#work", value: "Work" },
+//   { link: "#projects", value: "Projects" },
+//   { link: "#contact", value: "Contact Me" },
+// ];
 
 export const ExperienceList = [
+  {
+    company: "Overlap (YC S24)",
+    url: "https://www.joinoverlap.com",
+    role: "Software Engineer",
+    timeline: "Sep 2024 - Present",
+    bullets: ["Work in progress..."],
+    location: "Remote",
+  },
+  {
+    company: "AWS",
+    url: "https://aws.amazon.com",
+    role: "Software Dev Engineer Intern",
+    timeline: "May 2024 - Aug 2024",
+    bullets: [
+      "Developed a custom LLM model integrated with Retrieval-Augmented Generation (RAG) and agent-based solutions, reducing developer debugging time by over 10 hours per instance",
+      "Designed and implemented RAG infrastructure using team-specific code repositories, achieving a 93% accuracy",
+      "Built automated ingestion and CDK deployment strategies to save 70+ engineers 2 hours every week",
+      "Skills: Typescript, Python, React.js, Tailwind CSS, Langchain, AWS, Pinecone, Cypress, AWS CDK, Selenium",
+    ],
+    location: "Seattle, WA",
+  },
   {
     company: "Runway",
     url: "https://www.joinrunway.io",
     role: "CTO and Co Founder",
     timeline: "Jun 2022 - Present",
     bullets: [
-      "Led a team in achieving a $5M evaluation and engaging with over 2,000 students and businesses in total.",
+      "Built platform connecting early-stage startups with college students for freelance work, securing a $5M valuation and engaging over 2,000 students and businesses",
       "Increased business retention by 50% by implementing candidate recommendations and candidate vetting systems",
       "Improved student engagement by 40% through message notification systems with Twilio’s SMS services",
-      "Incorporated 10+ AWS features to streamline backend and storage processes",
+      "Incorporated 10+ AWS, GCP, and Azure features to streamline backend and storage processes",
       "Developed 10 REST APIs in Node.js for a job board, customer profiles, interviews, and SMS/email notifications",
-      "Built end-to-end features using Figma, React.js, Next.js, Node.js, Tailwind CSS, FastAPI, Redis, and MongoDB",
+      "Skills: Typescript, React.js, Next.js, Node.js, Express.js, Tailwind CSS, Redis, FastAPI, MongoDB, Langchain",
     ],
     location: "Atlanta, GA",
   },
@@ -27,11 +48,10 @@ export const ExperienceList = [
     role: "Software Engineering Intern",
     timeline: "May 2023 - Aug 2023",
     bullets: [
-      "Saved recruiters 30+ hours per week and reducing staffing needs",
+      "Developed resume-vetting platform that streamlined the recruitment process, reducing manual effort by 30+ hours per week for recruiters and reduced staffing needs",
       "Engineered and trained a Python-based NLP model with 95% accuracy to extract skills from job listings",
-      "Created 3 REST APIs in Flask to support user authentication, process SQL queries, and create email notifications",
-      "Created a user-friendly dashboard using React.js, SQL, and Flask for seamless applicant scoring on jobs",
       "Saved employees 5 hours every month by adding automated backup systems and continuous model updates",
+      "Skills: Javascript, Python, React.js, Flask, SQLite, Tailwind CSS, Spacy, Numpy",
     ],
     location: "Herndon, VA",
   },
@@ -41,9 +61,9 @@ export const ExperienceList = [
     role: "Software Developer",
     timeline: "Sep 2023 - Present",
     bullets: [
-      "Saved founders 10 hours weekly by implementing calendar and event tracking features",
-      "Collaborated with a cross-functional team using agile methodologies to develop full stack features in Next.js, tRPC, MongoDB, and Tailwind CSS",
-      "Built centralized authentication micro-service used by 10+ teams using gRPC and Protobuf for inter-service communication and Nest.js",
+      "Collaborated with a team to develop a non profit’s website, saving non-profit founders 10 hours weekly by implementing calendar and event tracking features",
+      "Built centralized authentication and email micro-services used by 10+ teams using gRPC and Protobuf",
+      "Skills: Next.js, tRPC, MongoDB, Prisma, Tailwind CSS, gRPC, Nest.js, Jest, Protobuf, PostgreSQL, Docker",
     ],
     location: "Atlanta, GA",
   },
