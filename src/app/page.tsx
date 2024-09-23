@@ -21,12 +21,12 @@ export default function Home() {
     <div className="flex flex-col">
       {Sections.map((section: JSX.Element, index: number) => {
         return (
-          <div className="h-screen flex justify-center relative">
-            <div className="w-11/12 px-20">
+          <div className="flex justify-center h-fit relative pb-10">
+            <div className="w-screen px-5 lg:w-11/12 lg:px-20 ">
               {section}
               <Icons />
             </div>
-            {index !== Sections.length - 1 ? (
+            {/* {index !== Sections.length - 1 ? (
               <div
                 className="absolute bottom-5 flex justify-center hover:cursor-pointer"
                 onClick={() => {
@@ -40,7 +40,7 @@ export default function Home() {
               </div>
             ) : (
               <></>
-            )}
+            )} */}
           </div>
         );
       })}

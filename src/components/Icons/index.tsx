@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function Icons() {
   return (
-    <div className="md:fixed left-[1/24] bottom-6">
-      <div className="flex gap-5">
+    <div className="hidden md:inline md:fixed left-[1/24] bottom-6">
+      <div className="flex md:gap-2 lg:gap-3 xl:gap-4">
         <Link href={"https://github.com/syaamkhandaker"} target="_blank">
           <GitHubIcon />
         </Link>

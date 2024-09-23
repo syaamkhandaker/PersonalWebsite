@@ -30,7 +30,7 @@ export default function Contact() {
       <div className="flex justify-center">
         <Link
           href="https://github.com/syaamkhandaker/PersonalWebsite"
-          className="text-xs absolute bottom-10"
+          className="text-xs absolute bottom-5"
         >
           Designed & Built by Syaam Khandaker
         </Link>

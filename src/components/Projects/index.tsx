@@ -1,38 +1,36 @@
 import { projectProps } from "@/common/types";
 import { ProjectList } from "@/utils/constants";
 import Link from "next/link";
+import SkillBox from "./SkillBox";
 
 export default function Projects() {
   return (
     <div className="flex flex-col" id="projects">
-      <div className="text-5xl flex justify-center font-semibold uppercase mb-20">
+      <div className="sm:text-2xl md:text-5xl flex justify-center font-semibold uppercase mb-16">
         Projects
       </div>
       <div className="flex justify-center">
-        <div className="flex justify-center flex-wrap gap-5 w-3/4">
+        <div className="flex justify-center flex-wrap gap-5 w-3/4 h-1/2">
           {ProjectList.map((projectEntry: projectProps) => {
             return (
               <div
                 key={projectEntry.name}
-                className="border-secondary hover:bg-gray-200 border-4 rounded-2xl mb-5 w-96"
+                className="border-secondary hover:bg-gray-200 border-4 rounded-2xl mb-3 h-fit w-1/3"
               >
                 <Link href={projectEntry.url} className="" target="_blank">
                   <div className="p-8">
-                    <div className="text-3xl font-semibold ">
+                    <div className="md:text-2xl sm:text-xl font-semibold ">
                       {projectEntry.name}
                     </div>
-                    <div className="mb-2 text-lg">{projectEntry.timeline}</div>
-                    <div>{projectEntry.text}</div>
-                    <div className="flex flex-wrap gap-2 mt-5">
+                    <div className="mb-2 md:text-base sm:text-sm">
+                      {projectEntry.timeline}
+                    </div>
+                    <div className="xl:text-sm text-[12px]">
+                      {projectEntry.text}
+                    </div>
+                    <div className="flex flex-wrap gap-2 mt-3">
                       {projectEntry.skills.map((skill: string) => {
-                        return (
-                          <div
-                            className="p-2 rounded-2xl border-[1px] border-black w-fit"
-                            key={skill}
-                          >
-                            {skill}
-                          </div>
-                        );
+                        return SkillBox(skill);
                       })}
                     </div>
                   </div>

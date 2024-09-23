@@ -8,6 +8,9 @@ export default function Experience() {
   const handleCompanyClick = (newCompany: string) => {
     setCompany(newCompany);
   };
+  const handleCompanyHyperlinkClick = (url: string) => {
+    window.open(url, "_target");
+  };
   return (
     <div className="h-full" id="work">
       <div className="text-5xl font-bold uppercase flex justify-center">
@@ -32,7 +35,7 @@ export default function Experience() {
             );
           })}
         </div>
-        <div className="w-0.5 h-full bg-black" />
+        <div className="w-0.5 bg-black h-[650px] " />
         <div className="w-1/4 flex gap-y-8">
           {ExperienceList.map((experienceEntry: experienceProps) => {
             if (experienceEntry.company === company) {
@@ -43,7 +46,12 @@ export default function Experience() {
                 >
                   <div className="text-3xl font-semibold w-max">
                     {experienceEntry.role}{" "}
-                    <span className="text-secondary">
+                    <span
+                      className="text-secondary hover:cursor-pointer"
+                      onClick={() =>
+                        handleCompanyHyperlinkClick(experienceEntry.url)
+                      }
+                    >
                       @ {experienceEntry.company}
                     </span>
                   </div>
